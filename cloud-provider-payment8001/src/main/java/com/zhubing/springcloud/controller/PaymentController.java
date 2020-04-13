@@ -44,6 +44,4 @@ public class PaymentController
             return new CommonResult(444,"从数据库获取Payment失败");
         }
     }
-
-
 }
