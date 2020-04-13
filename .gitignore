@@ -1,2 +1,10 @@
-/.idea/*
+# Created by .ignore support plugin (hsz.mobi)
+.idea
 *.iml
+/cloud-api-commons/target
+/cloud-consumer-order80/target
+/cloud-provider-payment8001/target
+/cloud-euraka-server7001/target
+/cloud-eureka-server7002/target
+
+

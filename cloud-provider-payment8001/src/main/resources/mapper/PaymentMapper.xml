@@ -12,7 +12,7 @@
 		)
 	</insert>
 	<resultMap id="BaseResultMap" type="com.zhubing.springcloud.entities.Payment">
-		<id column="id" property="id" jdbcType="BigInt"/>
+		<id column="id" property="id" jdbcType="BIGINT"/>
 		<id column="serial" property="serial" jdbcType="VARCHAR"/>
 	</resultMap>
 	<select id="getPaymentById" parameterType="long" resultMap="BaseResultMap">

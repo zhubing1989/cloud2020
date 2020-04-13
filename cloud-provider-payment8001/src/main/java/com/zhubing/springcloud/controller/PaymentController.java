@@ -4,7 +4,6 @@ import com.zhubing.springcloud.entities.CommonResult;
 import com.zhubing.springcloud.entities.Payment;
 import com.zhubing.springcloud.service.PaymentService;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -16,10 +15,11 @@ import javax.annotation.Resource;
 @Slf4j
 public class PaymentController
 {
+
     @Resource
     private PaymentService paymentService;
 
-    @PostMapping(value = "/payment/create")
+    @PostMapping(value="/payment/create")
     public CommonResult create(Payment payment)
     {
         int result=paymentService.create(payment);
@@ -32,11 +32,11 @@ public class PaymentController
         }
     }
 
-    @GetMapping(value = "/payment/get/{id}")
+    @GetMapping(value="/payment/get/{id}")
     public CommonResult getPaymentById(@PathVariable("id") Long id)
     {
         Payment result=paymentService.getPaymentById(id);
-        log.info("*************插入结果"+result);
+        log.info("*************获取结果"+result);
         if (result!=null)
         {
             return new CommonResult(200,"从数据库获取Payment成功",result);

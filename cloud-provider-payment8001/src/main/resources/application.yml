@@ -1,5 +1,5 @@
 server:
-  port: 8081
+  port: 8001
 
 spring:
   application:
@@ -13,5 +13,12 @@ spring:
 
 mybatis:
     mapper-locations: classpath:mapper/*.xml
-    type-aliases-package: com.atguigu.springcloud.entities
+    type-aliases-package: com.zhubing.springcloud.entities
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka7002.com:7002/eureka/,http://eureka7001.com:7001/eureka/
 
