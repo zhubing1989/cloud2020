@@ -17,3 +17,9 @@ cloud-provider-payment8001/src/test/
 cloud-api-commons/src/main/resources/
 /.idea/
 /cloud-consumerzk-order80/target/
+cloud-conusmerconsul-order80/src/test/
+cloud-conusmerconsul-order80/target/
+cloud-provider-payment8002/src/test/
+cloud-provider-payment8004/src/test/
+cloud-providerconsul-payment8006/src/test/
+cloud-providerconsul-payment8006/target/
